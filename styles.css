@@ -7,3 +7,24 @@ h1 {
   text-align: center;
   font-color:pink;
 }
+
+	body {
+margin: 0;
+padding: 0;
+background: #800000;
+}
+
+h1{
+font-size:30px;
+font-color:white;
+font-family:serif;
+text-align:left;
+background-color:#800000;
+}
+.login{
+padding:10px;
+font-size:20px;
+	text-align:center;
+background-color: #800000
+			 
+}
