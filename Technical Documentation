@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Peeka-Boo</title>
+	  
+	  <link rel="stylesheet" href="styles.css" />
+	
+    
+  </head>
+  <body>
+  
+   	
+      <ul>
+        <li><a href="index.html">Home</a></li>
+	       <li><a href="login.html">User sign-in</a></li>
+	      <li><a href="Signup.html">Sign-up</a></li>
+	      
+      </ul>
+    </div>
+	 <header>
+    <div class="header">	
+	<h1>PEEKA-BOO</h1>
+	</div>	
+   	</header>
+	
+	
+	<form action="loginall.html" method="GET">        
+        <br /><br />
+   
+</form> 
+
+
+
+<p> Basically planning on putting my technical documentstion here? 
+Suggested by vickers
+</p>
+
+<p>
+<h1>Project Title</h1>
+A brief paragraph explaining your project and what it does should be written here. The idea is to give readers an overview of what it is that you've built.
+
+<h2>Getting Started (Software Based)</h2>
+You should write a bit about how I can get your project working, It's good to think in terms of the following sections:
+
+<h2>Prerequisites</h2>
+What do I need in order to get your project running? For example,
+
+Python 3.5 (or later)
+sqlalchemy
+
+
+<h2>Installing</h2>
+A step by step guide on how to build and install your software, for example:
+
+Edit the configuration file
+In myconfig.ini, change the following settings to match your requirements:
+database_name=test
+database_user=test
+database_pass=password
+
+Install libraries and run program
+pip install -r requirements.txt
+python3 main.py
+
+Running Tests
+How do I run your tests? Make it as easy as possible to do this!
+pip install -r requirements.txt
+./tests.py
+
+<h2>Versioning Statergy</h2>
+What versioning statergy are you using for your project, something like semantic versioning might be a good idea.
+
+<h2>Getting Started (Hardware Based)</h2>
+
+Pre-requisites
+
+Components
+PBC
+etc..
+
+
+Component Testing
+
+PCB Board design
+
+System Building
+
+Hardware version Stratgery
+
+Authors
+Provide your names here
+
+Fred Bloggs - UI Design
+
+
+<h2>References</h2>
+
+Gitlab Markdown Guide
+Example 1
+Example 2
+
+</p>
+
+</body>
+
+ <footer>
+	 <div class="footer">	
+	  <div class="row">
+  <div class="column">
+	  <h2 class="widget_title green">Our Services</h2>
+				
+					<li><a>Web Design and Development</a></li>
+	   <br >
+					<li><a>SEO & SMO SERVICE</a></li>
+				
+		  </div>
+	 
+  <div class="column">
+		  <h2 class="widget_title green">Quick Links</h2>
+				
+					<li><a href="index.html">Home</a></li> <br >
+					<li><a href="javascript:void(0)">About us</a></li> <br >
+					<li><a href="javascript:void(0)">Contact us</a></li> <br >
+				
+		  </div>
+  <div class="column">
+		  <h2 class="widget_title green">Contact Us</h2>
+				<p>Contact information: <a href="mailto:ro16991@essex.ac.uk">
+ 				 ro16991@essex.ac.uk</a>.
+	  
+	    <br /> Rukayat Oyeleke </p>
+				
+					<a href="www.facebook.com"><Facebook></li></a> <br>
+					<a href="https://www.linkedin.com/in/rukayat-oyeleke-209969161/"><Linkedin"></li></a> <br >
+					<a href="www.twitter.com"><Twitter"></li></a>  <br >
+					
+  
+		  
+		  </div>
+</div> 
+	 
+	 
+			
+				
+		
+				
+	 </div>
+</footer> 
+</html>
