@@ -46,7 +46,19 @@ text-align:center;
 background-color:none;
 }
 	     
-footer {
+ .column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	     
+.footer {
     display: block;
 }
 
@@ -100,13 +112,18 @@ li a:hover {
 </body>
 
  <footer>
-	 <h2 class="widget_title green">Our Services</h2>
+	 <div class="footer">	
+	  <div class="row">
+  <div class="column">
+	  <h2 class="widget_title green">Our Services</h2>
 				<ul>
 					<li><a>Web Design and Development</a></li>
 					<li><a>SEO & SMO SERVICE</a></li>
 				</ul>
-			
-				<h2 class="widget_title green">Quick Links</h2>
+		  </div>
+	 
+  <div class="column">
+		  <h2 class="widget_title green">Quick Links</h2>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="javascript:void(0)">About us</a></li>
@@ -114,8 +131,9 @@ li a:hover {
 					<li><a href="javascript:void(0)">Careers</a></li>
 					<li><a href="javascript:void(0)">Contact us</a></li>
 				</ul>
-		
-				<h2 class="widget_title green">Contact Us</h2>
+		  </div>
+  <div class="column">
+		  <h2 class="widget_title green">Contact Us</h2>
 				<p>Contact information: <a href="mailto:ro16991@essex.ac.uk">
  				 ro16991@essex.ac.uk</a>.</p>
 				
@@ -124,6 +142,15 @@ li a:hover {
 					<a href="www.twitter.com"><i class="fab fa-twitter"></i></a> 
 					
   <p>Rukayat Oyeleke</p>
-  
+		  
+		  </div>
+</div> 
+	 
+	 
+			
+				
+		
+				
+	 </div>
 </footer> 
 </html>
