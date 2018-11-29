@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Peeka-Boo</title>
+	  
+	  <link rel="stylesheet" href="styles.css" />
+	
+  </head>
+  <body>
+   	
+      <ul>
+        <li><a href="index.html">Home</a></li>
+	       <li><a href="login.html">User sign-in</a></li>
+	      <li><a href="Signup.html">Sign-up</a></li>
+	      <li><a href="TechnicalDoc.html">Technical Documentation</a></li>
+      </ul>
+    </div>
+	 <header>
+    <div class="header">	
+	<h1>PEEKA-BOO</h1>
+	</div>	
+   	</header>
+	
+	<form action="loginall.html" method="GET">        
+        <br /><br />
+   
+</form> 
+
+
+
+Test to allow users seect images they want to upload 
+
+
+<form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
+
+<form action=”https://s3.eu-west-2.amazonaws.com/www.peeka-boo.com/Images/" method=”post” enctype=”multipart/form-data”> 
+   Key to upload: 
+   <input type=”input” name=”key” value=”user/user1/${filename}” />
+   <br /> 
+   <input type=”hidden” name=”acl” value=”public-read” />
+   <input type=”hidden” name=”success_action_redirect” value=”http://sigv4examplebucket.s3.amazonaws.com/successful_upload.html" /> 
+   Content-Type: 
+   <input type=”input” name=”Content-Type” value=”image/jpeg” />
+   <br /> 
+   <input type=”hidden” name=”x-amz-meta-uuid” value=”14365123651274" /> 
+   <input type=”hidden” name=”x-amz-server-side-encryption” value=”AES256" /> 
+   <input type=”text” name=”X-Amz-Credential” value=”AKIAIOSFODNN7EXAMPLE/20151229/us-east-1/s3/aws4_request” />    
+   <input type=”text” name=”X-Amz-Algorithm” value=”AWS4-HMAC-SHA256" /> 
+   <input type=”text” name=”X-Amz-Date” value=”20151229T000000Z” /> Tags for File: <input type=”input” name=”x-amz-meta-tag” value=”” />   
+   <br /> 
+   <input type=”hidden” name=”Policy” value=’<Base64-encoded policy string>' />     
+   <input type="hidden" name="X-Amz-Signature" value="<signature-value>" />     
+  File:      
+   <input type="file"   name="file" />
+   <br />     <!-- The elements after this will be ignored -->     
+   <input type="submit" name="submit" value="Upload to Amazon S3" />      
+  </form>    
+
+</body>
+
+ <footer>
+	 <div class="footer">	
+	  <div class="row">
+  <div class="column">
+	  <h2 class="widget_title green">Our Services</h2>
+				
+					<li><a>Web Design and Development</a></li>
+	   <br >
+					<li><a>SEO & SMO SERVICE</a></li>
+				
+		  </div>
+	 
+  <div class="column">
+		  <h2 class="widget_title green">Quick Links</h2>
+				
+					<li><a href="index.html">Home</a></li> <br >
+					<li><a href="javascript:void(0)">About us</a></li> <br >
+					<li><a href="javascript:void(0)">Contact us</a></li> <br >
+				
+		  </div>
+  <div class="column">
+		  <h2 class="widget_title green">Contact Us</h2>
+				<p>Contact information: <a href="mailto:ro16991@essex.ac.uk">
+ 				 ro16991@essex.ac.uk</a>.
+	  
+	    <br /> Rukayat Oyeleke </p>
+				
+					<a href="www.facebook.com"><Facebook></li></a> <br>
+					<a href="https://www.linkedin.com/in/rukayat-oyeleke-209969161/"><Linkedin"></li></a> <br >
+					<a href="www.twitter.com"><Twitter"></li></a>  <br >
+							  
+		  </div>
+</div> 
+	 	
+		
+				
+	 </div>
+</footer> 
+</html>
