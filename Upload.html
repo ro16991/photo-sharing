@@ -36,13 +36,16 @@ Test to allow users seect images they want to upload
   <input type="file" name="pic" accept="image/*">
   <input type="submit">
 </form>
+	<b>
+		<b>
+			<b>
 
 <form action=”https://s3.eu-west-2.amazonaws.com/www.peeka-boo.com/Images/" method=”post” enctype=”multipart/form-data”> 
    Key to upload: 
    <input type=”input” name=”key” value=”user/user1/${filename}” />
    <br /> 
    <input type=”hidden” name=”acl” value=”public-read” />
-   <input type=”hidden” name=”success_action_redirect” value=”http://sigv4examplebucket.s3.amazonaws.com/successful_upload.html" /> 
+   <input type=”hidden” name=”success_action_redirect” value=”index.html" /> 
    Content-Type: 
    <input type=”input” name=”Content-Type” value=”image/jpeg” />
    <br /> 
