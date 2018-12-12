@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        
+	    <h1 id= "peekaboo"></h1> 
         <ul>
         <li><a href="index.html">Home</a></li>
 	       <li><a href="login.html">User sign-in</a></li>
@@ -41,7 +41,40 @@
     <input type="Submit" value="Submit" > </br> </br>
     <p23> Already a member? <a href="login.html">click to login </a> </p23>
     </form>
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHRzuefVaoc565odXT1SCBg39DUj7eoz8",
+    authDomain: "peekaboo-b4b7e.firebaseapp.com",
+    databaseURL: "https://peekaboo-b4b7e.firebaseio.com",
+    projectId: "peekaboo-b4b7e",
+    storageBucket: "peekaboo-b4b7e.appspot.com",
+    messagingSenderId: "848235208393"
+  };
+  firebase.initializeApp(config);
+	
+	 var database = firebase.database();
+ 
+ 
+ var starCountRef = database.ref('posts/' + postId + '/starCount');
+ starCountRef.on('value', function(snapshot) {
+ updateStarCount(postElement, snapshot.val());
+ });
+ 
+ // update the UI
+ function updateStarCount(el, val) {
+ el.innerHtml(`${val} Stars!`);
+ }
+	
+	var peekaboo= document.getElementByID("peekaboo");
+	var dbRef= firebase.database().ref().child('text');
+	dbRef.on('value', snap => peekaboo.innerText = snap.val());
+</script>
     </body>
+
+
 
 
  <footer>
