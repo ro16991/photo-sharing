@@ -61,18 +61,19 @@ Test to allow users seect images they want to upload
 			<b>
 
 <form action=”https://s3.eu-west-2.amazonaws.com/www.peeka-boo.com/Images/" method=”post” enctype=”multipart/form-data”> 
-   Key to upload: 
+									   </form>
 		<script>							  
 	var dynamodb = new AWS.DynamoDB({region: 'us-west-2'});			
 									   
 									   </script>
-   <input type=”input” name=”Tag” value=”” />
+   <input type=”input” name=”Tag” />
    <br /> 
    <input type=”hidden” name=”success_action_redirect” value=”index.html" /> 
   <br /> 
  
-   <br />     <!-- The elements after this will be ignored -->     
-   <input type="submit" name="submit" value="Upload to Amazon S3" />      
+     <form> 
+   <input type="submit" name="submit" value="Upload to Amazon S3" />   
+	     href="s3_createbucket.js"
   </form>    
 
 </body>
