@@ -5,7 +5,14 @@
     <title>Peeka-Boo</title>
 	  
 	  <link rel="stylesheet" href="styles.css" />
-	
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+    <script src="./app.js"></script>
+    <script>
+       function getHtml(template) {
+          return template.join('\n');
+       }
+       listAlbums();
+    </script>
   </head>
   <body>
    	
@@ -15,7 +22,7 @@
 	      <li><a href="Signup.html">Sign-up</a></li>
 	      <li><a href="TechnicalDoc.html">Technical Documentation</a></li>
       </ul>
-    </div>
+    
 	 <header>
     <div class="header">	
 	<h1>PEEKA-BOO</h1>
@@ -23,15 +30,42 @@
    	</header>
 	
 	<form action="loginall.html" method="GET">        
-        <br /><br />
-   
-</form> 
+        <br /><br />  
+	</form> 
 
 
 
 Test to allow users seect images they want to upload 
 
+<?xml version="1.0" encoding="UTF-8"?>
+<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <CORSRule>
+        <AllowedOrigin>*</AllowedOrigin>
+        <AllowedMethod>POST</AllowedMethod>
+        <AllowedMethod>GET</AllowedMethod>
+        <AllowedMethod>PUT</AllowedMethod>
+        <AllowedMethod>DELETE</AllowedMethod>
+        <AllowedMethod>HEAD</AllowedMethod>
+        <AllowedHeader>*</AllowedHeader>
+    </CORSRule>
+</CORSConfiguration> 
+	  
+	  var albumBucketName = 'BUCKET_NAME';
+var bucketRegion = 'REGION';
+var IdentityPoolId = 'IDENTITY_POOL_ID';
 
+AWS.config.update({
+  region: bucketRegion,
+  credentials: new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: IdentityPoolId
+  })
+});
+
+var s3 = new AWS.S3({
+  apiVersion: '2006-03-01',
+  params: {Bucket: albumBucketName}
+});
+	
 <form action="/action_page.php">
   <input type="file" name="pic" accept="image/*">
   <input type="submit">
@@ -42,19 +76,14 @@ Test to allow users seect images they want to upload
 
 <form action=”https://s3.eu-west-2.amazonaws.com/www.peeka-boo.com/Images/" method=”post” enctype=”multipart/form-data”> 
    Key to upload: 
+		<script>							  
+	var dynamodb = new AWS.DynamoDB({region: 'us-west-2'});			
+									   
+									   </script>
    <input type=”input” name=”key” value=”user/user1/${filename}” />
    <br /> 
-   <input type=”hidden” name=”acl” value=”public-read” />
    <input type=”hidden” name=”success_action_redirect” value=”index.html" /> 
-   Content-Type: 
-   <input type=”input” name=”Content-Type” value=”image/jpeg” />
-   <br /> 
-   <input type=”hidden” name=”x-amz-meta-uuid” value=”14365123651274" /> 
-   <input type=”hidden” name=”x-amz-server-side-encryption” value=”AES256" /> 
-   <input type=”text” name=”X-Amz-Credential” value=”AKIAIOSFODNN7EXAMPLE/20151229/us-east-1/s3/aws4_request” />    
-   <input type=”text” name=”X-Amz-Algorithm” value=”AWS4-HMAC-SHA256" /> 
-   <input type=”text” name=”X-Amz-Date” value=”20151229T000000Z” /> Tags for File: <input type=”input” name=”x-amz-meta-tag” value=”” />   
-   <br /> 
+  <br /> 
    <input type=”hidden” name=”Policy” value=’<Base64-encoded policy string>' />     
    <input type="hidden" name="X-Amz-Signature" value="<signature-value>" />     
   File:      
@@ -65,6 +94,18 @@ Test to allow users seect images they want to upload
 
 </body>
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
  <footer>
 	 <div class="footer">	
 	  <div class="row">
