@@ -50,21 +50,7 @@ Test to allow users seect images they want to upload
     </CORSRule>
 </CORSConfiguration> 
 	  
-	  var albumBucketName = 'BUCKET_NAME';
-var bucketRegion = 'REGION';
-var IdentityPoolId = 'IDENTITY_POOL_ID';
-
-AWS.config.update({
-  region: bucketRegion,
-  credentials: new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: IdentityPoolId
-  })
-});
-
-var s3 = new AWS.S3({
-  apiVersion: '2006-03-01',
-  params: {Bucket: albumBucketName}
-});
+	  
 	
 <form action="/action_page.php">
   <input type="file" name="pic" accept="image/*">
@@ -80,14 +66,11 @@ var s3 = new AWS.S3({
 	var dynamodb = new AWS.DynamoDB({region: 'us-west-2'});			
 									   
 									   </script>
-   <input type=”input” name=”key” value=”user/user1/${filename}” />
+   <input type=”input” name=”Tag” value=”” />
    <br /> 
    <input type=”hidden” name=”success_action_redirect” value=”index.html" /> 
   <br /> 
-   <input type=”hidden” name=”Policy” value=’<Base64-encoded policy string>' />     
-   <input type="hidden" name="X-Amz-Signature" value="<signature-value>" />     
-  File:      
-   <input type="file"   name="file" />
+ 
    <br />     <!-- The elements after this will be ignored -->     
    <input type="submit" name="submit" value="Upload to Amazon S3" />      
   </form>    
