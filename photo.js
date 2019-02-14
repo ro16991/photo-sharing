@@ -1,5 +1,5 @@
 var albumBucketName = 'www.peeka-boo.com';
-var bucketRegion = 'us-east-2';
+var bucketRegion = 'eu-west-2';
 var IdentityPoolId = 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29';
 
 AWS.config.update({
