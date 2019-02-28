@@ -4,11 +4,11 @@
 	
 	$filePath = "https://example.com/test.png";
 	require 'vendor/autoload.php';
-	$bucketName = 'YOUR_BUCKET_NAME';
+	$bucketName = '/www.peeka-boo.com';
 	$filePath = './YOUR_FILE_NAME.png';
 	$keyName = basename($filePath);
-	$IAM_KEY = 'YOUR_SECRET_ACCESS_KEY';
-	$IAM_SECRET = 'YOUR_SECRET_ACCESS_CODE';
+	$IAM_KEY = '6z75dC9H0goofVe6COMkXmHppxAeAPYlClXwa3hl';
+	$IAM_SECRET = '6z75dC9H0goofVe6COMkXmHppxAeAPYlClXwa3hl';
 	use Aws\S3\S3Client;
 	use Aws\S3\Exception\S3Exception;
 	// Set Amazon S3 Credentials
