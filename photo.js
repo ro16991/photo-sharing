@@ -4,6 +4,7 @@ var IdentityPoolId = 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29';
 var bucketRegion = 'us-east-2';
 
 /* 
+hi
 var bucketRegion = 'us-east-2';
 region: bucketRegion,
 */
