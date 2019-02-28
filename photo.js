@@ -1,7 +1,9 @@
 var albumBucketName = 'rukayat';
 
-var IdentityPoolId = 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29';
+var keyid= "AKIAJXIDTDJYIATYMFAQ"
+var seckey= "6z75dC9H0goofVe6COMkXmHppxAeAPYlClXwa3hl" 
 
+var IdentityPoolId = 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29';
 
 
 /* 
@@ -9,9 +11,9 @@ var bucketRegion = 'us-east-2';
 region: bucketRegion,
 */
 
-
-
 AWS.config.update({
+  accessKeyId: keyid,
+    secretAccessKey: seckey,
   credentials: new AWS.CognitoIdentityCredentials({
     IdentityPoolId: IdentityPoolId
   })
