@@ -1,7 +1,7 @@
 var albumBucketName = 'rukayat';
 
-var keyid= "AKIAJXIDTDJYIATYMFAQ"
-var seckey= "6z75dC9H0goofVe6COMkXmHppxAeAPYlClXwa3hl" 
+var keyid= "AKIAJXIDTDJYIATYMFAQ";
+var seckey= "6z75dC9H0goofVe6COMkXmHppxAeAPYlClXwa3hl" ;
 
 var IdentityPoolId = 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29';
 
