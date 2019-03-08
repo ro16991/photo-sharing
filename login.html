@@ -73,6 +73,8 @@ span.psw {
 
   </head>
   <body>
+	  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 	  
 	  <ul>
         <li><a href="index.html">Home</a></li>
@@ -110,7 +112,9 @@ span.psw {
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+  </div> 
+	
+	<div class="fb-login-button" data-width="70px" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
 </form>
   
   </body> 
