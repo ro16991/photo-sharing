@@ -1,6 +1,6 @@
 var albumBucketName = 'rukayat';
 
-var IdentityPoolId = 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29';
+var IdentityPoolId = 'us-east-1:aa3480bd-b346-41d2-bd85-d78345836c5e';
 var bucketRegion = 'us-east-2';
 
 /* 
