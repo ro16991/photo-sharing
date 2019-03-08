@@ -13,7 +13,7 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 public class UploadObject {
 
     public static void main(String[] args) throws IOException {
-        String clientRegion = "eu-west-2;
+        String clientRegion = "eu-west-2";
         String bucketName = "rukayat";
         String fileObjKeyName = "*** File object key name ***";
         String fileName = "C:\Users\Rukayat\Documents\Final year project\Uploaded images\roses";
