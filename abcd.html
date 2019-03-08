@@ -5,6 +5,7 @@
     <title>AWS S3 File Upload</title>
      <link rel="stylesheet" href="styles.css" />
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+    <script src="abcd.js"></script>
 </head>
 
    <body onload="listObjs()"> 
@@ -30,7 +31,7 @@
     <AllowedHeader>*</AllowedHeader>
 </CORSRule>
 </CORSConfiguration>
-        
+        document.write(5 + 6);
     AWS.config.region = 'us-east-2'; // 1. Enter your region
 
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
