@@ -3,7 +3,7 @@
         
     AWS.config.region = 'us-east-2'; // 1. Enter your region
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'us-east-1:aa3480bd-b346-41d2-bd85-d78345836c5e' // 2. Enter your identity pool
+        IdentityPoolId: 'us-east-2:bb28458e-d1f1-45b7-9a10-986617014c29' // 2. Enter your identity pool
     });
     AWS.config.credentials.get(function(err) {
         if (err) alert(err);
