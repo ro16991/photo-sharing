@@ -88,7 +88,7 @@ span.psw {
    	</header>
 	
 	
-<form action="/action_page.php">
+<form action="login()">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
@@ -103,17 +103,16 @@ span.psw {
         
     <button type="submit">Login</button>
 	  <script type="text/javascript">
+		  function login() {
 		  try {
 		  if ("uname"="rukayat" && "pwd" = "password" ){
 			  <a href="user.html">Login</a>
 		  } catch (err)  {
 			  message.innerHTML = "Input is incorrect";
 		  }
-			  
+		  }  
 			
-			  
-			  
-			  
+					  
 	  </script> 
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
