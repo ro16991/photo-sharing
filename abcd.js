@@ -9,7 +9,7 @@
         if (err) alert(err);
         console.log(AWS.config.credentials);
     });
-    var bucketName = 'rukayat'; // Enter your bucket name
+    var bucketName = 'www.peeka-boo.com'; // Enter your bucket name
     var bucket = new AWS.S3({
         params: {
             Bucket: bucketName
