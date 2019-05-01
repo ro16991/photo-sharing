@@ -33,27 +33,10 @@
         <br /><br />  
 	</form> 
 
-
-<?xml version="1.0" encoding="UTF-8"?>
-<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-    <CORSRule>
-        <AllowedOrigin>*</AllowedOrigin>
-        <AllowedMethod>POST</AllowedMethod>
-        <AllowedMethod>GET</AllowedMethod>
-        <AllowedMethod>PUT</AllowedMethod>
-        <AllowedMethod>DELETE</AllowedMethod>
-        <AllowedMethod>HEAD</AllowedMethod>
-        <AllowedHeader>*</AllowedHeader>
-    </CORSRule>
-</CORSConfiguration> 
-	  
+  
 	  
 	
-<form action="/action_page.php">
-  <input type="file" name="pic" accept="image/*">
-  <input type="submit">
-</form>
-	  <input type="file" accept="image/*" onchange="loadFile(event)">
+  <input type="file" accept="image/*" onchange="loadFile(event)">
 <img id="output"/>
 <script>
   var loadFile = function(event) {
@@ -79,7 +62,7 @@
  
      <form> 
    <input type="submit" name="submit" value="Upload to Amazon S3" />   
-	     <script type = "text/javascript" src = "upload.js" ></script>
+	     <script type = "text/javascript" value= "output" src = "upload.js" ></script>
 	   
 	 
   </form>    
