@@ -34,9 +34,6 @@
 	</form> 
 
 
-
-Test to allow users seect images they want to upload 
-
 <?xml version="1.0" encoding="UTF-8"?>
 <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <CORSRule>
@@ -56,6 +53,15 @@ Test to allow users seect images they want to upload
   <input type="file" name="pic" accept="image/*">
   <input type="submit">
 </form>
+	  <input type="file" accept="image/*" onchange="loadFile(event)">
+<img id="output"/>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
+</script>
+	  
 	<b>
 		<b>
 			<b>
@@ -63,17 +69,17 @@ Test to allow users seect images they want to upload
 <form action=”https://s3.eu-west-2.amazonaws.com/www.peeka-boo.com/Images/" method=”post” enctype=”multipart/form-data”> 
 									   </form>
 		<script>							  
-	var dynamodb = new AWS.DynamoDB({region: 'us-west-2'});			
+	var dynamodb = new AWS.DynamoDB({region: 'us-east-2'});			
 									   
 									   </script>
-   <input type=”input” name=”Tag” />
+   <input type=”input” name=”Image comment” />
    <br /> 
-   <input type=”hidden” name=”success_action_redirect” value=”index.html" /> 
+  
   <br /> 
  
      <form> 
    <input type="submit" name="submit" value="Upload to Amazon S3" />   
-	     <script type = "text/javascript" src = "photo.js" ></script>
+	     <script type = "text/javascript" src = "upload.js" ></script>
 	   
 	 
   </form>    
